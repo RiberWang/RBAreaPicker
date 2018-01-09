@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07B1306E1FF5E82C00D43B9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B1306D1FF5E82C00D43B9D /* AppDelegate.m */; };
+		07B130711FF5E82C00D43B9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B130701FF5E82C00D43B9D /* ViewController.m */; };
+		07B130741FF5E82C00D43B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B130721FF5E82C00D43B9D /* Main.storyboard */; };
+		07B130761FF5E82C00D43B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B130751FF5E82C00D43B9D /* Assets.xcassets */; };
+		07B130791FF5E82C00D43B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B130771FF5E82C00D43B9D /* LaunchScreen.storyboard */; };
+		07B1307C1FF5E82C00D43B9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B1307B1FF5E82C00D43B9D /* main.m */; };
+		07B130861FF5E82C00D43B9D /* RBAreaPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B130851FF5E82C00D43B9D /* RBAreaPickerTests.m */; };
+		07B130911FF5E82C00D43B9D /* RBAreaPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B130901FF5E82C00D43B9D /* RBAreaPickerUITests.m */; };
+		07B130A51FF5F10E00D43B9D /* RBProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B130A41FF5F10E00D43B9D /* RBProvinceModel.m */; };
+		07B130A81FF6129A00D43B9D /* RBAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B130A71FF6129A00D43B9D /* RBAreaPicker.m */; };
+		07B130AA1FF6259100D43B9D /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = 07B130A91FF6259100D43B9D /* area.json */; };
+		07B130AD1FF62BBB00D43B9D /* RBNoPasteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B130AB1FF62BBB00D43B9D /* RBNoPasteTextField.m */; };
+		07B130B01FF63ED000D43B9D /* RBSelectAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B130AF1FF63ED000D43B9D /* RBSelectAreaController.m */; };
+		3222A4B4B93ED40431CD2BF7 /* libPods-RBAreaPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B2D9BA1BFD2F7145EFDC3 /* libPods-RBAreaPicker.a */; };
+		550D33B2272658C24D2583C1 /* libPods-RBAreaPickerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8148DB4BFB27E486B5DEE /* libPods-RBAreaPickerTests.a */; };
+		C159F616669531FDA7757155 /* libPods-RBAreaPickerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105D8659CB057F48B33E50DE /* libPods-RBAreaPickerUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07B130821FF5E82C00D43B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B130611FF5E82C00D43B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B130681FF5E82C00D43B9D;
+			remoteInfo = RBAreaPicker;
+		};
+		07B1308D1FF5E82C00D43B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B130611FF5E82C00D43B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B130681FF5E82C00D43B9D;
+			remoteInfo = RBAreaPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07B130691FF5E82C00D43B9D /* RBAreaPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBAreaPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B1306C1FF5E82C00D43B9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07B1306D1FF5E82C00D43B9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07B1306F1FF5E82C00D43B9D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		07B130701FF5E82C00D43B9D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07B130731FF5E82C00D43B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07B130751FF5E82C00D43B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07B130781FF5E82C00D43B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07B1307A1FF5E82C00D43B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B1307B1FF5E82C00D43B9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07B130811FF5E82C00D43B9D /* RBAreaPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBAreaPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B130851FF5E82C00D43B9D /* RBAreaPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBAreaPickerTests.m; sourceTree = "<group>"; };
+		07B130871FF5E82C00D43B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B1308C1FF5E82C00D43B9D /* RBAreaPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBAreaPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B130901FF5E82C00D43B9D /* RBAreaPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBAreaPickerUITests.m; sourceTree = "<group>"; };
+		07B130921FF5E82C00D43B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B130A31FF5F10E00D43B9D /* RBProvinceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBProvinceModel.h; sourceTree = "<group>"; };
+		07B130A41FF5F10E00D43B9D /* RBProvinceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBProvinceModel.m; sourceTree = "<group>"; };
+		07B130A61FF6129A00D43B9D /* RBAreaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBAreaPicker.h; sourceTree = "<group>"; };
+		07B130A71FF6129A00D43B9D /* RBAreaPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBAreaPicker.m; sourceTree = "<group>"; };
+		07B130A91FF6259100D43B9D /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
+		07B130AB1FF62BBB00D43B9D /* RBNoPasteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNoPasteTextField.m; sourceTree = "<group>"; };
+		07B130AC1FF62BBB00D43B9D /* RBNoPasteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNoPasteTextField.h; sourceTree = "<group>"; };
+		07B130AE1FF63ED000D43B9D /* RBSelectAreaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBSelectAreaController.h; sourceTree = "<group>"; };
+		07B130AF1FF63ED000D43B9D /* RBSelectAreaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBSelectAreaController.m; sourceTree = "<group>"; };
+		105D8659CB057F48B33E50DE /* libPods-RBAreaPickerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RBAreaPickerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1568231CF0AB9BF97A7B5EC6 /* Pods-RBAreaPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBAreaPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBAreaPicker/Pods-RBAreaPicker.release.xcconfig"; sourceTree = "<group>"; };
+		702A81F000270A30169B9F2C /* Pods-RBAreaPickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBAreaPickerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBAreaPickerUITests/Pods-RBAreaPickerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8714B2BB79060A3D6FF4D10D /* Pods-RBAreaPickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBAreaPickerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBAreaPickerUITests/Pods-RBAreaPickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		871AC2D0542B6EE456CA7374 /* Pods-RBAreaPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBAreaPickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBAreaPickerTests/Pods-RBAreaPickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A8240FA88632F089806390E /* Pods-RBAreaPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBAreaPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBAreaPicker/Pods-RBAreaPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		9B4B2D9BA1BFD2F7145EFDC3 /* libPods-RBAreaPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RBAreaPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C8148DB4BFB27E486B5DEE /* libPods-RBAreaPickerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RBAreaPickerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B1F2433A4E4B129A5FE291 /* Pods-RBAreaPickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBAreaPickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBAreaPickerTests/Pods-RBAreaPickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07B130661FF5E82C00D43B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3222A4B4B93ED40431CD2BF7 /* libPods-RBAreaPicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B1307E1FF5E82C00D43B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550D33B2272658C24D2583C1 /* libPods-RBAreaPickerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B130891FF5E82C00D43B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C159F616669531FDA7757155 /* libPods-RBAreaPickerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B130601FF5E82C00D43B9D = {
+			isa = PBXGroup;
+			children = (
+				07B1306B1FF5E82C00D43B9D /* RBAreaPicker */,
+				07B130841FF5E82C00D43B9D /* RBAreaPickerTests */,
+				07B1308F1FF5E82C00D43B9D /* RBAreaPickerUITests */,
+				07B1306A1FF5E82C00D43B9D /* Products */,
+				A2F421A8AC379C6E696E836F /* Pods */,
+				33C4056E0669A8BCEED64918 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07B1306A1FF5E82C00D43B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07B130691FF5E82C00D43B9D /* RBAreaPicker.app */,
+				07B130811FF5E82C00D43B9D /* RBAreaPickerTests.xctest */,
+				07B1308C1FF5E82C00D43B9D /* RBAreaPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07B1306B1FF5E82C00D43B9D /* RBAreaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				07B130A01FF5F06200D43B9D /* Resource */,
+				07B1309F1FF5F04F00D43B9D /* Model */,
+				07B1309E1FF5EEB100D43B9D /* View */,
+				07B1306C1FF5E82C00D43B9D /* AppDelegate.h */,
+				07B1306D1FF5E82C00D43B9D /* AppDelegate.m */,
+				07B1306F1FF5E82C00D43B9D /* ViewController.h */,
+				07B130701FF5E82C00D43B9D /* ViewController.m */,
+				07B130AE1FF63ED000D43B9D /* RBSelectAreaController.h */,
+				07B130AF1FF63ED000D43B9D /* RBSelectAreaController.m */,
+				07B130721FF5E82C00D43B9D /* Main.storyboard */,
+				07B130751FF5E82C00D43B9D /* Assets.xcassets */,
+				07B130771FF5E82C00D43B9D /* LaunchScreen.storyboard */,
+				07B1307A1FF5E82C00D43B9D /* Info.plist */,
+				07B1307B1FF5E82C00D43B9D /* main.m */,
+			);
+			path = RBAreaPicker;
+			sourceTree = "<group>";
+		};
+		07B130841FF5E82C00D43B9D /* RBAreaPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				07B130851FF5E82C00D43B9D /* RBAreaPickerTests.m */,
+				07B130871FF5E82C00D43B9D /* Info.plist */,
+			);
+			path = RBAreaPickerTests;
+			sourceTree = "<group>";
+		};
+		07B1308F1FF5E82C00D43B9D /* RBAreaPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07B130901FF5E82C00D43B9D /* RBAreaPickerUITests.m */,
+				07B130921FF5E82C00D43B9D /* Info.plist */,
+			);
+			path = RBAreaPickerUITests;
+			sourceTree = "<group>";
+		};
+		07B1309E1FF5EEB100D43B9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07B130A61FF6129A00D43B9D /* RBAreaPicker.h */,
+				07B130A71FF6129A00D43B9D /* RBAreaPicker.m */,
+				07B130AC1FF62BBB00D43B9D /* RBNoPasteTextField.h */,
+				07B130AB1FF62BBB00D43B9D /* RBNoPasteTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07B1309F1FF5F04F00D43B9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07B130A31FF5F10E00D43B9D /* RBProvinceModel.h */,
+				07B130A41FF5F10E00D43B9D /* RBProvinceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07B130A01FF5F06200D43B9D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				07B130A91FF6259100D43B9D /* area.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		33C4056E0669A8BCEED64918 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B4B2D9BA1BFD2F7145EFDC3 /* libPods-RBAreaPicker.a */,
+				A5C8148DB4BFB27E486B5DEE /* libPods-RBAreaPickerTests.a */,
+				105D8659CB057F48B33E50DE /* libPods-RBAreaPickerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2F421A8AC379C6E696E836F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A8240FA88632F089806390E /* Pods-RBAreaPicker.debug.xcconfig */,
+				1568231CF0AB9BF97A7B5EC6 /* Pods-RBAreaPicker.release.xcconfig */,
+				D1B1F2433A4E4B129A5FE291 /* Pods-RBAreaPickerTests.debug.xcconfig */,
+				871AC2D0542B6EE456CA7374 /* Pods-RBAreaPickerTests.release.xcconfig */,
+				8714B2BB79060A3D6FF4D10D /* Pods-RBAreaPickerUITests.debug.xcconfig */,
+				702A81F000270A30169B9F2C /* Pods-RBAreaPickerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07B130681FF5E82C00D43B9D /* RBAreaPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B130951FF5E82C00D43B9D /* Build configuration list for PBXNativeTarget "RBAreaPicker" */;
+			buildPhases = (
+				90CFC99B1D8F9D2D3ABFC1B5 /* [CP] Check Pods Manifest.lock */,
+				07B130651FF5E82C00D43B9D /* Sources */,
+				07B130661FF5E82C00D43B9D /* Frameworks */,
+				07B130671FF5E82C00D43B9D /* Resources */,
+				EAF4388F5E3C74595968FEE1 /* [CP] Embed Pods Frameworks */,
+				8112F274108D3B5BBCEA53D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBAreaPicker;
+			productName = RBAreaPicker;
+			productReference = 07B130691FF5E82C00D43B9D /* RBAreaPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07B130801FF5E82C00D43B9D /* RBAreaPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B130981FF5E82C00D43B9D /* Build configuration list for PBXNativeTarget "RBAreaPickerTests" */;
+			buildPhases = (
+				E9F7BFADB00673BD247D20A8 /* [CP] Check Pods Manifest.lock */,
+				07B1307D1FF5E82C00D43B9D /* Sources */,
+				07B1307E1FF5E82C00D43B9D /* Frameworks */,
+				07B1307F1FF5E82C00D43B9D /* Resources */,
+				3A71F24997C0318AF2FD82DD /* [CP] Embed Pods Frameworks */,
+				F6015EB1D96C0A3B68C9E5D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B130831FF5E82C00D43B9D /* PBXTargetDependency */,
+			);
+			name = RBAreaPickerTests;
+			productName = RBAreaPickerTests;
+			productReference = 07B130811FF5E82C00D43B9D /* RBAreaPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07B1308B1FF5E82C00D43B9D /* RBAreaPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B1309B1FF5E82C00D43B9D /* Build configuration list for PBXNativeTarget "RBAreaPickerUITests" */;
+			buildPhases = (
+				FEB611A833D7412EBA46F98B /* [CP] Check Pods Manifest.lock */,
+				07B130881FF5E82C00D43B9D /* Sources */,
+				07B130891FF5E82C00D43B9D /* Frameworks */,
+				07B1308A1FF5E82C00D43B9D /* Resources */,
+				068F3D33A41458A685537171 /* [CP] Embed Pods Frameworks */,
+				BD2FA4F202F82850F40D30BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B1308E1FF5E82C00D43B9D /* PBXTargetDependency */,
+			);
+			name = RBAreaPickerUITests;
+			productName = RBAreaPickerUITests;
+			productReference = 07B1308C1FF5E82C00D43B9D /* RBAreaPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07B130611FF5E82C00D43B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Riber;
+				TargetAttributes = {
+					07B130681FF5E82C00D43B9D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					07B130801FF5E82C00D43B9D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07B130681FF5E82C00D43B9D;
+					};
+					07B1308B1FF5E82C00D43B9D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07B130681FF5E82C00D43B9D;
+					};
+				};
+			};
+			buildConfigurationList = 07B130641FF5E82C00D43B9D /* Build configuration list for PBXProject "RBAreaPicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07B130601FF5E82C00D43B9D;
+			productRefGroup = 07B1306A1FF5E82C00D43B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07B130681FF5E82C00D43B9D /* RBAreaPicker */,
+				07B130801FF5E82C00D43B9D /* RBAreaPickerTests */,
+				07B1308B1FF5E82C00D43B9D /* RBAreaPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07B130671FF5E82C00D43B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B130791FF5E82C00D43B9D /* LaunchScreen.storyboard in Resources */,
+				07B130761FF5E82C00D43B9D /* Assets.xcassets in Resources */,
+				07B130AA1FF6259100D43B9D /* area.json in Resources */,
+				07B130741FF5E82C00D43B9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B1307F1FF5E82C00D43B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B1308A1FF5E82C00D43B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		068F3D33A41458A685537171 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBAreaPickerUITests/Pods-RBAreaPickerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A71F24997C0318AF2FD82DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBAreaPickerTests/Pods-RBAreaPickerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8112F274108D3B5BBCEA53D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RBAreaPicker/Pods-RBAreaPicker-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBAreaPicker/Pods-RBAreaPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90CFC99B1D8F9D2D3ABFC1B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBAreaPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2FA4F202F82850F40D30BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBAreaPickerUITests/Pods-RBAreaPickerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F7BFADB00673BD247D20A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBAreaPickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF4388F5E3C74595968FEE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBAreaPicker/Pods-RBAreaPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6015EB1D96C0A3B68C9E5D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBAreaPickerTests/Pods-RBAreaPickerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB611A833D7412EBA46F98B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBAreaPickerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07B130651FF5E82C00D43B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B130AD1FF62BBB00D43B9D /* RBNoPasteTextField.m in Sources */,
+				07B130711FF5E82C00D43B9D /* ViewController.m in Sources */,
+				07B130B01FF63ED000D43B9D /* RBSelectAreaController.m in Sources */,
+				07B1307C1FF5E82C00D43B9D /* main.m in Sources */,
+				07B1306E1FF5E82C00D43B9D /* AppDelegate.m in Sources */,
+				07B130A51FF5F10E00D43B9D /* RBProvinceModel.m in Sources */,
+				07B130A81FF6129A00D43B9D /* RBAreaPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B1307D1FF5E82C00D43B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B130861FF5E82C00D43B9D /* RBAreaPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B130881FF5E82C00D43B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B130911FF5E82C00D43B9D /* RBAreaPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07B130831FF5E82C00D43B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B130681FF5E82C00D43B9D /* RBAreaPicker */;
+			targetProxy = 07B130821FF5E82C00D43B9D /* PBXContainerItemProxy */;
+		};
+		07B1308E1FF5E82C00D43B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B130681FF5E82C00D43B9D /* RBAreaPicker */;
+			targetProxy = 07B1308D1FF5E82C00D43B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07B130721FF5E82C00D43B9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B130731FF5E82C00D43B9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07B130771FF5E82C00D43B9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B130781FF5E82C00D43B9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07B130931FF5E82C00D43B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07B130941FF5E82C00D43B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07B130961FF5E82C00D43B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8240FA88632F089806390E /* Pods-RBAreaPicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RBAreaPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dookay.RBAreaPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07B130971FF5E82C00D43B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1568231CF0AB9BF97A7B5EC6 /* Pods-RBAreaPicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RBAreaPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dookay.RBAreaPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07B130991FF5E82C00D43B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B1F2433A4E4B129A5FE291 /* Pods-RBAreaPickerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RBAreaPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dookay.RBAreaPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBAreaPicker.app/RBAreaPicker";
+			};
+			name = Debug;
+		};
+		07B1309A1FF5E82C00D43B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871AC2D0542B6EE456CA7374 /* Pods-RBAreaPickerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RBAreaPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dookay.RBAreaPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBAreaPicker.app/RBAreaPicker";
+			};
+			name = Release;
+		};
+		07B1309C1FF5E82C00D43B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8714B2BB79060A3D6FF4D10D /* Pods-RBAreaPickerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RBAreaPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dookay.RBAreaPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RBAreaPicker;
+			};
+			name = Debug;
+		};
+		07B1309D1FF5E82C00D43B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702A81F000270A30169B9F2C /* Pods-RBAreaPickerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RBAreaPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dookay.RBAreaPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RBAreaPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07B130641FF5E82C00D43B9D /* Build configuration list for PBXProject "RBAreaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B130931FF5E82C00D43B9D /* Debug */,
+				07B130941FF5E82C00D43B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B130951FF5E82C00D43B9D /* Build configuration list for PBXNativeTarget "RBAreaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B130961FF5E82C00D43B9D /* Debug */,
+				07B130971FF5E82C00D43B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B130981FF5E82C00D43B9D /* Build configuration list for PBXNativeTarget "RBAreaPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B130991FF5E82C00D43B9D /* Debug */,
+				07B1309A1FF5E82C00D43B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B1309B1FF5E82C00D43B9D /* Build configuration list for PBXNativeTarget "RBAreaPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B1309C1FF5E82C00D43B9D /* Debug */,
+				07B1309D1FF5E82C00D43B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07B130611FF5E82C00D43B9D /* Project object */;
+}
